@@ -19,11 +19,11 @@
     --color-grey-4:#caa5d1;
     --color-grey-5:#2a2e35;
     --color-grey-6:#12181b;
-    --bg-image:url('../images/img3.png')
+    // --bg-image:url("data:images/img3.png")
 }
 
 body{
-    font-family: Gothic-mythic, verdana, tahoma, sans-serif;
+    font-family: verdana, tahoma, sans-serif;
 }
 
 header{
@@ -36,29 +36,33 @@ header a{
     color: var(--color-secondary-2);
     padding-top: 20px;
 }
-main #home #banner img{
+main  #banner img{
     width: 150px;
     height: 150px;
     margin-left: -10px;
 }
 
 #home #presentation .title{
-    width: 70%;
-    padding: 40px 60px;
+    width: 100%;
+    padding: 130px 80px;
     color: var(--color-secondary-2);
-    font-size: 25px;
+    font-size: 35px;
+    text-align: left;
 }
 #home #presentation .but{
     display:flex;
     justify-content:center;
+    align-items: center;
     width: 70%;
     gap: 15px;
+    margin: auto;
+
 }
 #home #presentation .but a{
     text-decoration: none;
     border-radius: 100px;
-    padding:8px 0px;
-    width: 150px;
+    padding:12px 0px;
+    width: 180px;
     text-align: center;
     color: var(--color-white);
 
@@ -72,5 +76,75 @@ main #home #banner img{
     
 }
 #home #presentation {
-    background-image: url('../images/img2.png');
+    flex: 1.5;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+}
+#home .image {
+    flex: 1;
+    box-sizing: border-box;
+    // overflow: hidden;
+    position: relative;
+    left: -140px;
+    top: -70px;
+    // background: #000;
+    // background: #000;
+}
+#home .image img{
+    width: 120%;
+}
+
+#home {
+    display: flex;
+}
+#about {
+    // padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    // margin: 50px;
+}
+
+#about .about-me{
+    background: linear-gradient(123deg,var(--color-secondary-2), var(--color-secondary-1));
+    border-radius: 100px;
+    margin: 0 auto;
+    width: 70%;
+    padding: 0px;
+}
+
+.about-me .text{
+    float: right;
+    width: 60%;
+    padding: 24px;
+    text-align: justify;
+    background: inherit;
+    color: var(--color-white);
+    border-radius: 0px 100px 100px 0px;
+    margin-top: 30px;
+}
+
+.about-me .photo{
+    float: left;
+    width: 40%;
+    background: inherit;
+    border-radius: 100px 0px 00px 100px;
+    // padding: -30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.photo img{
+    // object-fit: contain;
+    // object-position: center;
+    width: 100%;
+
+}
+#service {
+    position: relative;
+    top: 250px;
+    margin-top: 50px;
+    padding-top: 40px;
+    // background: #000;
 }
